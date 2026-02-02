@@ -1,0 +1,21 @@
+!DOCTYPE html
+html lang=en
+head
+    meta charset=UTF-8 
+    titleAzure Regiontitle
+    link rel=stylesheet href=styles.css 
+head
+body
+    div class=card
+        h1Azure Deployment Regionh1
+        p id=regionLoading...p
+    div
+
+    !-- Azure replaces this at deploy time --
+    script
+        window.AZURE_REGION = __AZURE_REGION__;
+    script
+
+    script src=app.jsscript
+body
+html
